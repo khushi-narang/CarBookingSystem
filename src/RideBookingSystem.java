@@ -1,7 +1,24 @@
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.sql.*;
+
 
 public class RideBookingSystem {
+        public static void main(String[] args){
+            try {
+                Class.forName("org.postgresql.Driver");
+                Connection cn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/fsd", "postgres", "1ch005E&!");
+                System.out.println("Connected to the PostgreSQL database!");
+
+                Statement st = cn.createStatement();
+//                cn.close();
+//                System.out.println("Connection Closed");
+            } catch (Exception e){
+                e.printStackTrace();
+            }
+        }
+
 
     public List<Ride> rideList = new ArrayList<>();
     public List<User> userList = new ArrayList<>();

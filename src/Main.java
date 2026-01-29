@@ -7,6 +7,8 @@ public class Main {
         rideBookingSystem.createRide("Noida", "Delhi", 5, 3, 700.00);
         System.out.println(rideBookingSystem.getAllRide());
 
+//        rideBookingSystem.bookRide();
+
         System.out.println();
 
     }
