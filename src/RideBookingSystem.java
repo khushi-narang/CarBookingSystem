@@ -3,7 +3,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.sql.*;
 
-
 public class RideBookingSystem {
         public static void main(String[] args){
             try {
@@ -18,7 +17,6 @@ public class RideBookingSystem {
                 e.printStackTrace();
             }
         }
-
 
     public List<Ride> rideList = new ArrayList<>();
     public List<User> userList = new ArrayList<>();
@@ -118,7 +116,7 @@ public class RideBookingSystem {
 
         if (ride.available_seats >= seats) {
             ride.available_seats -= seats;
-            bookingList.add(new Booking(loggedInUser, ride, seats));
+            bookingList.add(new Booking(ride, seats));
             System.out.println("Ride booked");
         } else {
             System.out.println("Not enough seats");
