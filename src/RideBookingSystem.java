@@ -11,8 +11,8 @@ public class RideBookingSystem {
                 System.out.println("Connected to the PostgreSQL database!");
 
                 Statement st = cn.createStatement();
-//                cn.close();
-//                System.out.println("Connection Closed");
+                cn.close();
+                System.out.println("Connection Closed");
             } catch (Exception e){
                 e.printStackTrace();
             }

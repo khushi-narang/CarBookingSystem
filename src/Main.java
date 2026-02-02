@@ -16,10 +16,9 @@ public class Main {
             System.out.println("5. Search Ride");
             System.out.println("6. Book Ride");
             System.out.println("7. View My Bookings");
-            System.out.println("8. Update Ride");
-            System.out.println("9. Update Booking");
-            System.out.println("10. Delete Ride");
-            System.out.println("11. Delete Booking");
+            System.out.println("8. Update Booking");
+            System.out.println("9. Delete Ride");
+            System.out.println("10. Delete Booking");
             System.out.println("0. Exit");
             System.out.print("Enter choice: ");
 
@@ -137,22 +136,19 @@ public class Main {
                     }
                     break;
                 }
-
-                case 8: {
-
-                }
-
-                case 9: {
-
-                }
-
-                case 10: {
-
-                }
-
-                case 11: {
-
-                }
+//
+//                case 8: {
+//
+//
+//                }
+//
+//                case 9: {
+//
+//                }
+//
+//                case 10: {
+//
+//                }
 
                 case 0:
                     System.out.println("Exiting");

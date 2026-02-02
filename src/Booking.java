@@ -6,7 +6,7 @@ public class Booking {
     int total_seats;
     double total_fare;
 
-    public Booking(int booking_id, int bookedSeats, Ride ride, User user, int total_seats, double total_fare) {
+    public Booking(Ride ride, int total_seats) {
         this.booking_id = booking_id;
         this.bookedSeats = bookedSeats;
         this.ride = ride;
