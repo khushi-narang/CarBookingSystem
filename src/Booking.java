@@ -6,17 +6,13 @@ public class Booking {
     int total_seats;
     double total_fare;
 
-    public Booking(int bookedSeats, int booking_id, Ride ride, User user, int total_seats, double total_fare) {
-        this.bookedSeats = bookedSeats;
+    public Booking(Ride ride, int total_seats) {
         this.booking_id = booking_id;
+        this.bookedSeats = bookedSeats;
         this.ride = ride;
         this.user = user;
         this.total_seats = total_seats;
         this.total_fare = total_fare;
-    }
-
-    public Booking(User loggedInUser, Ride ride, int seats) {
-
     }
 
     @Override
